@@ -15,7 +15,7 @@
                     @endif
                     ログイン中
                         <div class="links">
-                        <a href="{{route('note.index')}}">戻る</a>
+                        <a href="{{route('ouchi.index')}}">戻る</a>
                         </div>
                 </div>
             </div>

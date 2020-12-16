@@ -12,6 +12,31 @@
   <component name="ChangeListManager">
     <list default="true" id="032b39fe-724f-49f2-b560-1bc24b543dd0" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../task_aoyama/memo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactFormController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NoteFormController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/ContactForm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Note.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_10_155500_create_tests_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_11_140836_create_contact_forms_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_11_142839_add_title_to_contact_forms_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_13_023433_create_note_forms_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact/show.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact/store.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/note/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/note/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/note/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/note/show.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/note/store.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/route.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/route3.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +48,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -139,16 +164,18 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/contact" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/resources/views/tests" />
       <recent name="$PROJECT_DIR$/resources/views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/contact" />
     </key>
   </component>
   <component name="RunManager">
@@ -173,6 +200,8 @@
       <workItem from="1607805780285" duration="5332000" />
       <workItem from="1607847379371" duration="618000" />
       <workItem from="1607848013256" duration="18182000" />
+      <workItem from="1608042035601" duration="3872000" />
+      <workItem from="1608133747976" duration="1196000" />
     </task>
     <servers />
   </component>
