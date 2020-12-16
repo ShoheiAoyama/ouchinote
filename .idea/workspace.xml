@@ -29,7 +29,10 @@
       <change beforePath="$PROJECT_DIR$/resources/views/contact/index.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/contact/show.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/contact/store.blade.php" beforeDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+=======
+>>>>>>> origin/master
       <change beforePath="$PROJECT_DIR$/resources/views/note/create.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/note/edit.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/note/index.blade.php" beforeDir="false" />
@@ -200,8 +203,12 @@
       <workItem from="1607805780285" duration="5332000" />
       <workItem from="1607847379371" duration="618000" />
       <workItem from="1607848013256" duration="18182000" />
+<<<<<<< HEAD
       <workItem from="1608042035601" duration="3872000" />
       <workItem from="1608133747976" duration="1196000" />
+=======
+      <workItem from="1608042035601" duration="333000" />
+>>>>>>> origin/master
     </task>
     <servers />
   </component>
