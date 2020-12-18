@@ -84,19 +84,56 @@ Lack of fairness.
 
 ## Required functions
 
-### Search function
-
-- データベース(住宅会社から)
-- データベース(一般)
-- データベース(管理者)
-- 検索
-- 評価
-- コメント
-
 ### Supervision function
 
-- データベース(一般)
-- データベース(管理者)
+- ユーザーログインはユーザー任意に決めたIDとパスワードで行う  
+--- ログインするにはユーザー登録が必要  
+--- ログイン後はログアウトすることができる  
+- ユーザーはログイン後住宅会社情報を管理できる  
+--- 登録した住宅会社情報は内容変更できる  
+--- 登録した住宅会社情報は削除できる  
+--- 登録した住宅会社情報は一覧表示させる  
+--- 一覧表示は資金計画額順に並べ替えることが出来る  
+- 住宅会社ログインは住宅会社任意に決めたIDとパスワードで行う  
+--- ログインするには住宅会社登録が必要  
+--- ログイン後はログアウトすることができる  
+- ユーザーはログイン後理由と共に決定した住宅会社に「オススメ」をつけることができる  
+--- 「オススメ」は1アカウントにつき1つまでしか登録できない  
+--- 「オススメ」は登録後に変更することができる  
+--- 「オススメ」は登録後に削除することができる  
+--- もし会社登録がなければ、登録申請ができる　　
+
+- Login with an ID and password decided by the user  
+--- User registration required to log in  
+--- You can log out after logging in  
+- Users can manage housing company information after logging in  
+--- The registered housing company information can be changed  
+--- Registered housing company information can be deleted  
+--- Display a list of registered housing company information 
+--- The list display can be sorted in order of financial plan amount  
+- Login with an ID and password decided by the housing company　 
+--- Housing company registration required to log in  
+--- You can log out after logging in  
+- After logging in, the user can add "recommendations" to the housing company that was decided along with the reason.  
+--- Only one "Recommended" can be registered per account  
+--- "Recommended" can be changed after registration
+--- "Recommended" can be deleted after registration  
+--- If you do not have a company registration, you can apply for registration  
+
+
+### Search function
+
+- ユーザーはログインしなくてもオススメされた住宅会社を閲覧することができる   
+- ユーザーはログインしなくても気になるワードで検索することができる
+- ユーザーはログイン後住宅会社を「お気に入り登録」できる  
+--- 「お気に入り登録」は一覧表示できる  
+--- 「お気に入り登録」は削除できる  
+
+- Users can browse recommended housing companies without logging in  
+- Users can search for words they care about without logging in  
+- Users can "favorite" housing companies after logging in  
+--- "Favorite registration" can be displayed in a list 
+--- "Favorite registration" can be deleted  
 
 ## My development environment
 
