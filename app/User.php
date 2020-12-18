@@ -36,4 +36,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * userの住宅会社情報を取得
+     */
+    public function ouchis()
+    {
+        return $this->belongsToMany('App\Models\Ouchi');
+    }
 }

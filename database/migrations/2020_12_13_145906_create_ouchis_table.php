@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateOuchisTable extends Migration
 {
+    protected $primaryKey = 'ouchi_id';
     /**
      * Run the migrations.
      *

@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateUsersTable extends Migration
 {
+    protected $primaryKey = 'user_id';
     /**
      * Run the migrations.
      *
