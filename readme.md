@@ -5,9 +5,6 @@
 <a href="https://img.shields.io/github/forks/ShoheiAoyama/ouchinote"><img src="https://img.shields.io/github/forks/ShoheiAoyama/ouchinote" alt="forks"></a>
 <a href="https://img.shields.io/github/stars/ShoheiAoyama/ouchinote"><img src="https://img.shields.io/github/stars/ShoheiAoyama/ouchinote" alt="stars"></a>
 <a href="https://img.shields.io/github/license/ShoheiAoyama/ouchinote"><img src="https://img.shields.io/github/license/ShoheiAoyama/ouchinote" alt="license"></a>
-<a href="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FShoheiAoyama%2Fouchinote
-"><img src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FShoheiAoyama%2Fouchinote
-" alt="twitter"></a>
 </p>
 
 ## About OuchiNote
@@ -135,11 +132,12 @@ Lack of fairness.
 --- "Favorite registration" can be displayed in a list 
 --- "Favorite registration" can be deleted  
 
+## Framework
+
+[Laravel](https://packagist.org/packages/laravel/framework).   
+[bootstrap](https://getbootstrap.jp/). 
+
 ## My development environment
 
 [Linux](https://brew.sh/index_ja).
-
-## Framework
-
-[Laravel](https://packagist.org/packages/laravel/framework). 
 

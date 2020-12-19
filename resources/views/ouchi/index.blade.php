@@ -23,7 +23,7 @@
                             <thead>
                             <tr>
                                 <th scope="col">COMPANY</th>
-                                <th scope="col">WEBSITE</th>
+                                <th scope="col">WEB</th>
                                 <th scope="col">FINANCE</th>
                                 <th scope="col">NUMBER</th>
                                 <th scope="col">EMAIL</th>
