@@ -156,7 +156,7 @@
                 <form method="POST" action="{{ route('ouchi.destroy', ['id' => $contact->id]) }}"
                       id="delete_{{$contact->id}}">
                     @csrf
-                    <a href="#" class="btn btn-outline-dark  mx-auto" data-id="{{$contact->id}}"
+                    <a href="#" class="btn btn-outline-dark mx-auto" data-id="{{$contact->id}}"
                        onclick="deletePost(this);">削除する</a>
                 </form>
             </div>

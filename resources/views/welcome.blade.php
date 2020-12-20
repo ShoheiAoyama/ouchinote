@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>OUCHI-NOTE</title>
+    <title>Ouchi-Note</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -77,7 +77,7 @@
 
     {{--トップ画像--}}
     <div class="content">
-        <img class="container-md" src="https://blog.autumnblue.net/wp-content/uploads/2020/12/house2.jpg"
+        <img class="container-md" src="http://archi-engineer.sakura.ne.jp/ouchinote2.jpg"
              alt="Responsive image">
     </div>
     <div class="container-md">
@@ -98,7 +98,7 @@
             </div>
             <div class="card-body">
                 <h5 class="card-title text-dark">OuchiNote</h5>
-                <p class="card-text">お気に入りの住宅会社を登録して、自分だけの家づくりノートを作成</p>
+                <p class="card-text">お気に入りの住宅会社を登録して、あなただけの家づくりノートを作成</p>
                 <a href="{{route('ouchi.index')}}" class="btn btn-dark">Let's build a house</a>
             </div>
         </div>
