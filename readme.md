@@ -16,20 +16,20 @@
 ## Background
 
 日本の家づくりは注文住宅をはじめ、住宅会社によってデザインや性能等の仕様や建築費用が大きく異なる。  
-そのため、自分の理想とする家づくりが可能な住宅を探し、比較検討後選ぶことが難しい現状がある。  
+そのため、自分の理想とする家づくりが可能な住宅会社   を探すこと、また比較検討を行った後一社に絞り込むことは大変難しい現状がある。  
 
 In Japanese house building, specifications such as design and performance and construction costs differ greatly depending on the housing company, including custom-built houses.  
-Therefore, it is difficult to find a house where you can build your own ideal house and select it after comparison.
+Therefore, it is very difficult to find a housing company that can build your own ideal house, and to narrow down to one company after conducting a comparative study.
 
 ## Task
 
 この現状の課題は大きく分けて2つある。
-- **評判の良い住宅会社と出会うことが難しいこと。**
-- **気になる住宅会社の情報を収集した際、情報管理するのが難しいこと。**  
+- **評判の良い理想とする住宅会社と出会うことが難しいこと。**
+- **気になる住宅会社の情報を収集した際、情報管理・比較するのが難しいこと。**  
 
 There are two main issues in this situation.
-- **Difficult to meet a reputable housing company.**
-- **When collecting information on a housing company that interests you, it is difficult to manage the information.**
+- **Difficult to meet a reputable ideal housing company.**
+- **When collecting information on a housing company that interests you, it is difficult to manage and compare the information.**
 
 ## Reason
 
@@ -37,11 +37,11 @@ There are two main issues in this situation.
 >
 注文住宅の会社を探すツールとしては、大手広告媒体の[SUUMO雑誌]( https://suumo.jp/edit/series/ )や、WEBサービスの[SUUMOネット]( https://suumo.jp/chumon/ )、[HOME'S]( https://www.homes.co.jp/iezukuri/ )、
 [Houzz]( https://www.houzz.jp/ )といったメディアが主に使われている。  
-しかしこれらの媒体は、広告費用をかけたものから視認性の高い場所に掲載される仕組みになっているため、
+しかしこれらの媒体は、広告費用をかけた会社から視認性の高い広告を出すことが可能な仕組みになっていることが多いため、
 実際の世間の評価よりも資金力のある住宅会社が良い家を作る会社として認知されてしまっている。  
-「家づくりは３回行わなければ納得する家は作れない。」と世間で言われている原因として、
-このような住宅会社選びで失敗していることもあげられると考える。  
-世間の評価をベースにした住宅会社情報媒体が必要である。
+「家づくりは３回行わなければ納得する家は作れない。」と世間で言われているのは、
+このような住宅会社選びで失敗していることも原因の１つにあげられる。  
+世間の評価をベースにした住宅会社情報を集めることができるサービスが必要である。
 
 >気になる住宅会社の情報を収集した際、情報管理するのが難しい  
 >
@@ -60,16 +60,15 @@ There are two main issues in this situation.
 
 Tools for finding a custom-built housing company include [SUUMO Magazine](https://suumo.jp/edit/series/), a major advertising medium, and [SUUMO Net](https://suumo.jp/), a web service. chumon /), [HOME'S](https://www.homes.co.jp/iezukuri/),
 Media such as [Houzz](https://www.houzz.jp) are mainly used.  
-However, since these media are designed to be posted in places with high visibility from those that cost advertising,
+However, these media often have a mechanism that allows highly visible advertisements to be placed by companies that have spent advertising costs.
 A housing company that has more financial power than the actual public evaluation has been recognized as a company that makes a good house.  
-One of the reasons why people say, "If you don't build a house three times, you can't build a convincing house."
-I think that it is possible that such a housing company selection has failed.
-A housing company information medium based on public evaluation is needed.
+People say, "If you don't build a house three times, you can't build a convincing house."
+One of the causes is the failure to select a housing company like this.  
+We need a service that can collect housing company information based on public evaluation.
 
 >When collecting information on a housing company that interests you, it is difficult to manage the information.  
 >
 Housing companies hold various events and seminars to let them know how to build their own homes.  
-
 Participate in various events to gather more information for comparison,
 It is not easy to manage which company the information collected belongs to.  
 In fact, when I served a customer at a custom-built housing company, it was difficult to manage the information I collected,

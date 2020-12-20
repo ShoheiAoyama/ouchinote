@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="container">
+    <div class="container mb-3">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -47,7 +47,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container mb-3">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -72,7 +72,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container mb-3">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -102,7 +102,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container mb-3">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -138,26 +138,27 @@
                             <div class="form-control" id="formGroupExampleInput">{{$contact->option}}</div>
                         </div>
                         </br>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm">
-                                    <form method="GET" action="{{ route('ouchi.edit', ['id' => $contact->id]) }}">
-                                        @csrf
-                                        <input class="btn btn-outline-success" type="submit" value="変更する">
-                                    </form>
-                                </div>
-                                <div class="col-sm">
-                                    <form method="POST" action="{{ route('ouchi.destroy', ['id' => $contact->id]) }}"
-                                          id="delete_{{$contact->id}}">
-                                        @csrf
-                                        <a href="#" class="btn btn-outline-danger" data-id="{{$contact->id}}"
-                                           onclick="deletePost(this);">削除する</a>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-3">
+        <div class="row justify-content-center">
+            <div class="col" style="text-align: center;">
+                <form method="GET" action="{{ route('ouchi.edit', ['id' => $contact->id]) }}">
+                    @csrf
+                    <input class="btn btn-outline-primary mx-auto" type="submit" value="変更する">
+                </form>
+            </div>
+            <div class="col" style="text-align: center;">
+                <form method="POST" action="{{ route('ouchi.destroy', ['id' => $contact->id]) }}"
+                      id="delete_{{$contact->id}}">
+                    @csrf
+                    <a href="#" class="btn btn-outline-dark  mx-auto" data-id="{{$contact->id}}"
+                       onclick="deletePost(this);">削除する</a>
+                </form>
             </div>
         </div>
     </div>
@@ -170,7 +171,6 @@
                 document.getElementById('delete_' + e.dataset.id).submit();
             }
         }
-
     </script>
 
     {{--戻るボタン--}}

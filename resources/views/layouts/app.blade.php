@@ -36,9 +36,9 @@
 </head>
 <body>
 <div id="app">
-    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm text-light">
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">
+            <a class="navbar-brand text-light" href="{{ url('/') }}">
                 {{ config('app.name', 'Laravel') }}
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -53,7 +53,7 @@
                         <a class="nav-link" href="{{ url('/') }}">Top<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item text-dark">
-                        <a class="nav-link" href="{{route('ouchi.index')}}">OuchiNot<span
+                        <a class="nav-link" href="{{route('ouchi.index')}}">OuchiNote<span
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item text-dark">
