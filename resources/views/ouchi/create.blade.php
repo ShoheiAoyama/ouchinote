@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Dashboard</div>
+                    <div class="card-header">新規登録</div>
 
                     <div class="card-body">
                         @if (session('status'))
@@ -29,7 +29,8 @@
                             </br>
                             <div class="form-group">
                                 <label for="formGroupExampleInput">電話番号</label>
-                                <input type="tel" name="company_number">
+                                <input type="tel" class="form-control" id="formGroupExampleInput"
+                                       placeholder="電話番号" name="company_number">
                             </div>
                             </br>
                             {{--                            電話番号--}}
@@ -41,11 +42,17 @@
                                        aria-describedby="emailHelp" placeholder="Enter email" name="email">
                             </div>
                             </br>
-                            ホームページ
-                            <input type="url" name="url">
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">ホームページ</label>
+                            <input type="url" class="form-control" id="formGroupExampleInput"
+                                   placeholder="Example input" name="url">
+                            </div>
                             </br>
-                            SNS
-                            <input type="url" name="sns">
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">SNS</label>
+                            <input type="url" class="form-control" id="formGroupExampleInput"
+                                   placeholder="Example input" name="sns">
+                            </div>
                             </br>
                             <div class="form-group">
                                 <label for="formGroupExampleInput">担当者名</label>
@@ -55,7 +62,8 @@
                             </br>
                             <div class="form-group">
                                 <label for="formGroupExampleInput">担当者電話番号</label>
-                                <input type="tel" name="person_number">
+                                <input type="tel" class="form-control" id="formGroupExampleInput"
+                                       placeholder="電話番号" name="person_number">
                             </div>
                             </br>
                             {{--                            担当者電話番号--}}
@@ -120,7 +128,7 @@
                                        name="option">
                             </div>
                             </br>
-                            <input class="btn btn-info" type="submit"
+                            <input class="btn btn-outline-primary" type="submit"
                                    value="新規登録する">
                             </br>
                         </form>

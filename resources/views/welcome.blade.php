@@ -1,176 +1,162 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>OUCHI-NOTE</title>
+    <title>OUCHI-NOTE</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+    <!-- Bootstorap -->
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}" type="text/css">
 
-            .full-height {
-                height: 100vh;
-            }
+    <!-- Styles -->
+    <style>
+        html, body {
+            background-color: #fff;
+            color: #636b6f;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 200;
+            height: 100vh;
+            margin: 0;
+        }
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+        .full-height {
+            height: 100vh;
+        }
 
-            .position-ref {
-                position: relative;
-            }
+        .flex-center {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+        .position-ref {
+            position: relative;
+        }
 
-            .content {
-                text-align: center;
-            }
+        .top-right {
+            position: absolute;
+            right: 10px;
+            top: 18px;
+        }
 
-            .title {
-                font-size: 84px;
-            }
+        .top-center {
+            position: absolute;
+            text-align: center;
+            top: 18px;
+        }
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+        .content {
+            text-align: center;
+        }
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-            /*カード*/
-            .card_ao{
-                width: 288px;
-                height: auto;
-                border-radius: 8px;
-                overflow: hidden;
-                box-shadow: 0 4px 15px rgba(0,0,0,.2)
-            }
+        .title {
+            font-size: 84px;
+        }
 
-            .card__imgframe_ao{
-                width: 100%;
-                height: auto;
-                /*padding-top: 56.25%;*/
-                background: #bbb;
-                box-sizing: border-box;
-            }
+        .links > a {
+            color: #636b6f;
+            padding: 0 25px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
 
-            .card__textbox_ao{
-                width: 100%;
-                height: auto;
-                padding: 20px 18px;
-                background: #fff;
-                box-sizing: border-box;
-            }
+        .m-b-md {
+            margin-bottom: 30px;
+        }
 
-            .card__textbox_ao > * + *{
-                margin-top: 10px;
-            }
+        /*カード*/
+        .card-height {
+            height: 500px;
+        }
 
-            .card__titletext_ao{
-                font-size: 20px;
-                font-weight: bold;
-                line-height: 125%;
-            }
-
-            .card__overviewtext_ao{
-                font-size: 12px;
-                line-height: 150%;
-            }
+        .card__textbox_ao > * + * {
+            margin-top: 10px;
+        }
 
 
+    </style>
+</head>
+<body>
+<div class="flex-center position-ref full-height">
 
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+    @if (Route::has('login'))
+        <div class="top-center links">
+            <a class="text-dark" href="{{route('ouchi.index')}}">OuchiNot</a>
+            <a class="text-dark" href="https://calendar.google.com/calendar/u/0/r/month?tab=wc">Calendar</a>
+            @auth
+                <a class="text-dark" href="{{ url('/home') }}">Home</a>
+            @else
+                <a class="text-dark" href="{{ route('login') }}">Login</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+                @if (Route::has('register'))
+                    <a class="text-dark" href="{{ route('register') }}">Register</a>
+                @endif
+            @endauth
+        </div>
+    @endif
+    <div class="content">
+        <h2 class="content text-primary">OuchiNote</h2>
+        <img src="https://blog.autumnblue.net/wp-content/uploads/2020/12/house2.jpg" alt="Responsive image">
 
-            <div class="content">
-                <div class="title m-b-md">
-                    OuchiNote
-                </div>
-                <h2 class="content">さあ、家づくりをはじめよう</h2>
-{{--カード作成--}}
-                <div class="links flex-center m-b-md">
-                    <a href="{{route('ouchi.index')}}">
-                <div class="card_ao">
-                    <div class="card__imgframe_ao">
-                        <img src="https://blog.autumnblue.net/wp-content/uploads/2020/12/house.jpeg" width="100%" height="auto" alt="家づくり">
-                    </div>
-                    <div class="card__textbox_ao">
-                        <div class="card__titletext_ao">
-                            OuchiNote
-                        </div>
-                        <div class="card__overviewtext_ao">
-                            お気に入りの住宅会社を登録して、
-                            自分だけの家づくりノートを作成
-                        </div>
-                    </div>
-                </div>
-                    </a>
-                </div>
-                {{--カード作成2--}}
-                <div class="links flex-center">
-                    <a href="https://calendar.google.com/calendar/u/0/r/month?tab=wc">
-                        <div class="card_ao">
-                            <div class="card__imgframe_ao">
-                                <img src="https://duo-works.com/wp-content/uploads/2018/11/google-calendar.jpg" width="100%" height="auto" alt="Google Calendar">
-                            </div>
-                            <div class="card__textbox_ao">
-                                <div class="card__titletext_ao">
-                                    Google Calendar
-                                </div>
-                                <div class="card__overviewtext_ao">
-                                    見学会や相談日などの家づくりイベントを、Googleカレンダーに登録・確認
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-{{--                <div class="links">--}}
-{{--                    <a href="{{route('ouchi.index')}}">OuchiNote</a>--}}
-{{--                    <a href="https://calendar.google.com/calendar/u/0/r/month?tab=wc"  class="btn btn-outline-info">Google Calendar</a>--}}
-{{--                    <a href="https://blog.laravel.com"  class="btn btn-outline-info">Blog</a>--}}
-{{--                </div>--}}
+{{--        <div class="alert alert-warning" role="alert">--}}
+{{--            <h4 class="alert-heading">さあ、家づくりをはじめよう</h4>--}}
+{{--            <p>Did you find a good housing company?　Use this service to successfully build your precious home!</p>--}}
+{{--            <hr>--}}
+{{--            <p class="mb-0">Let's start looking for a housing company.</p>--}}
+{{--        </div>--}}
+{{--        <div class="jumbotron jumbotron-fluid">--}}
+{{--            <div class="container">--}}
+{{--                <h1 class="display-4">さあ、家づくりをはじめよう</h1>--}}
+{{--                <p class="lead">Did you find a good housing company?　Use this service to successfully build your precious home!</p>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+
+        <h2 class="content text-dark my-3">さあ、家づくりをはじめよう</h2>
+        {{--        ouchinote--}}
+        <div class="card text-center">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="#">OuchiNote</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('ouchi.index')}}">Let's build a house</a>
+                    </li>
+                </ul>
             </div>
-
+            <div class="card-body">
+                <h5 class="card-title text-dark">OuchiNote</h5>
+                <p class="card-text">お気に入りの住宅会社を登録して、自分だけの家づくりノートを作成</p>
+                <a href="{{route('ouchi.index')}}" class="btn btn-dark">Let's build a house</a>
+            </div>
         </div>
 
-    </body>
+        {{--        Google Calendar--}}
+        <div class="card text-center">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="#">Google Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://calendar.google.com/calendar/u/0/r/month?tab=wc">Check!</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-dark">Google Calendar</h5>
+                <p class="card-text">見学会や相談日などのイベントを、Googleカレンダーに登録・確認</p>
+                <a href="https://calendar.google.com/calendar/u/0/r/month?tab=wc" class="btn btn-dark">Check!</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 </html>

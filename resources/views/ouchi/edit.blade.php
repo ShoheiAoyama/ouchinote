@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">会社情報</div>
+                    <div class="card-header">変更画面</div>
 
                     <div class="card-body">
                         @if (session('status'))
@@ -107,7 +107,7 @@
                             </div>
                             </br>
 
-                            <input class="btn btn-info" type="submit" value="更新する">
+                            <input class="btn btn-outline-primary" type="submit" value="更新する">
                             </br>
                         </form>
                     </div>
