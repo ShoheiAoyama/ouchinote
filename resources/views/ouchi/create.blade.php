@@ -33,9 +33,8 @@
                                        placeholder="電話番号" name="company_number">
                             </div>
                             </br>
-                            {{--                            電話番号--}}
-                            {{--                            <input type="tel" name="company_number" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">--}}
-                            {{--                            </br>--}}
+                            {{--電話番号(番号桁数指定する場合)--}}
+                            {{-- <input type="tel" name="company_number" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">--}}
                             <div class="form-group">
                                 <label for="exampleInputEmail1">メールアドレス</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1"
@@ -44,14 +43,14 @@
                             </br>
                             <div class="form-group">
                                 <label for="formGroupExampleInput">ホームページ</label>
-                            <input type="url" class="form-control" id="formGroupExampleInput"
-                                   placeholder="Example input" name="url">
+                                <input type="url" class="form-control" id="formGroupExampleInput"
+                                       placeholder="Example input" name="url">
                             </div>
                             </br>
                             <div class="form-group">
                                 <label for="formGroupExampleInput">SNS</label>
-                            <input type="url" class="form-control" id="formGroupExampleInput"
-                                   placeholder="Example input" name="sns">
+                                <input type="url" class="form-control" id="formGroupExampleInput"
+                                       placeholder="Example input" name="sns">
                             </div>
                             </br>
                             <div class="form-group">
@@ -66,9 +65,6 @@
                                        placeholder="電話番号" name="person_number">
                             </div>
                             </br>
-                            {{--                            担当者電話番号--}}
-                            {{--                            <input type="tel" name="person_number" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">--}}
-                            {{--                            </br>--}}
                             <div class="form-group">
                                 <label for="exampleInputEmail1">担当者メールアドレス</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1"

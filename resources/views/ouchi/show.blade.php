@@ -7,7 +7,6 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">会社情報</div>
-
                     <div class="card-body">
                         @if (session('status'))
                             <div class="alert alert-success" role="alert">
@@ -53,9 +52,7 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">担当者情報</div>
-
                     <div class="card-body">
-
                         <div class="form-group">
                             <label for="formGroupExampleInput">担当者名</label>
                             <div class="form-control" id="formGroupExampleInput">{{$contact->person_name}}</div>
@@ -80,7 +77,6 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">住宅性能</div>
-
                     <div class="card-body">
                         <div class="form-group">
                             <label for="formGroupExampleInput">断熱性能(Ua値)</label>
@@ -106,13 +102,11 @@
             </div>
         </div>
     </div>
-
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">資金計画</div>
-
                     <div class="card-body">
                         <div class="form-group">
                             <label for="formGroupExampleInput">坪単価</label>
@@ -144,16 +138,8 @@
                             <div class="form-control" id="formGroupExampleInput">{{$contact->option}}</div>
                         </div>
                         </br>
-
-
                         <div class="container">
                             <div class="row">
-{{--                                <div class="col-sm">--}}
-{{--                                    <form method="GET" action="{{ route('ouchi.index', ['id' => $contact->id]) }}">--}}
-{{--                                        @csrf--}}
-{{--                                        <input class="btn btn-outline-info" type="submit" value="戻る">--}}
-{{--                                    </form>--}}
-{{--                                </div>--}}
                                 <div class="col-sm">
                                     <form method="GET" action="{{ route('ouchi.edit', ['id' => $contact->id]) }}">
                                         @csrf
@@ -176,7 +162,6 @@
         </div>
     </div>
 
-
     {{--    javascript--}}
     <script>
         function deletePost(e) {
@@ -188,40 +173,24 @@
 
     </script>
 
-    <footer class="fixed-top">
-                <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-{{--                    <div class="container">--}}
-                        <div class="row">
-                            <div class="col-sm">
-                                <form method="GET" action="{{ route('ouchi.index', ['id' => $contact->id]) }}">
-                                    @csrf
-                                    <input class="btn btn-outline-info" type="submit" value="<">
-                                </form>
-                            </div>
-{{--                            <div class="col-sm">--}}
-{{--                                <form method="GET" action="{{ route('ouchi.edit', ['id' => $contact->id]) }}">--}}
-{{--                                    @csrf--}}
-{{--                                    <input class="btn btn-outline-success" type="submit" value="変更する">--}}
-{{--                                </form>--}}
-{{--                            </div>--}}
-{{--                            <div class="col-sm">--}}
-{{--                                <form method="POST" action="{{ route('ouchi.destroy', ['id' => $contact->id]) }}"--}}
-{{--                                      id="delete_{{$contact->id}}">--}}
-{{--                                    @csrf--}}
-{{--                                    <a href="#" class="btn btn-outline-danger" data-id="{{$contact->id}}"--}}
-{{--                                       onclick="deletePost(this);">削除する</a>--}}
-{{--                                </form>--}}
-{{--                            </div>--}}
-                        </div>
-{{--                    </div>--}}
-                </div>
-            </div>
-        </div>
-                </div>
-        {{--            </div>--}}
-        {{--        </div>--}}
-    </footer>
+    {{--戻るボタン--}}
+    {{--    <footer class="fixed-top">--}}
+    {{--        <div class="container">--}}
+    {{--            <div class="row justify-content-center">--}}
+    {{--                <div class="col-md-8">--}}
+    {{--                    <div class="card">--}}
+    {{--                        <div class="row">--}}
+    {{--                            <div class="col-sm">--}}
+    {{--                                <form method="GET" action="{{ route('ouchi.index', ['id' => $contact->id]) }}">--}}
+    {{--                                    @csrf--}}
+    {{--                                    <input class="btn btn-outline-info" type="submit" value="<">--}}
+    {{--                                </form>--}}
+    {{--                            </div>--}}
+    {{--                        </div>--}}
+    {{--                    </div>--}}
+    {{--                </div>--}}
+    {{--            </div>--}}
+    {{--        </div>--}}
+    {{--    </footer>--}}
+
 @endsection

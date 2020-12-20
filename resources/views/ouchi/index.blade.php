@@ -17,16 +17,15 @@
                                 新規登録
                             </button>
                         </form>
-
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th scope="col">COMPANY</th>
-                                <th scope="col">WEB</th>
-                                <th scope="col">FINANCE</th>
-                                <th scope="col">EMAIL</th>
-                                <th scope="col">SNS</th>
-                                <th scope="col">INFO</th>
+                                <th scope="col" style="text-align: center;">COMPANY</th>
+                                <th scope="col" style="text-align: center;">WEB</th>
+                                <th scope="col" style="text-align: center;">FIN</th>
+                                {{--                                <th scope="col">EMAIL</th>--}}
+                                <th scope="col" style="text-align: center;">SNS</th>
+                                <th scope="col" style="text-align: center;">INFO</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -35,7 +34,7 @@
                                     <th>{{$contact->company_name }}</th>
                                     <td><a href="{{$contact->url}}">web</a></td>
                                     <td>{{$contact->financing_plan}}万円</td>
-                                    <td><a href="{{$contact->company_email}}">email</a></td>
+                                    {{--                                    <td><a href="{{$contact->company_email}}">email</a></td>--}}
                                     <td><a href="{{$contact->sns}}">sns</a></td>
                                     <td><a href="{{ route('ouchi.show',['id'=>$contact->id])}}">info</a></td>
                                 </tr>

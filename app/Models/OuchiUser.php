@@ -9,5 +9,4 @@ class OuchiUser extends Model
     protected $table = 'ouchi_user';
     public $timestamps = false;
 
-
 }

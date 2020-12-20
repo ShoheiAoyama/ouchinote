@@ -23,52 +23,18 @@
             margin: 0;
         }
 
-        .full-height {
-            height: 100vh;
-        }
-
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
-
-        .position-ref {
-            position: relative;
-        }
-
-        .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
-        }
-
-        .top-center {
-            position: absolute;
-            text-align: center;
-            top: 18px;
-        }
-
         .content {
             text-align: center;
         }
 
-        .title {
-            font-size: 84px;
-        }
-
         .links > a {
             color: #636b6f;
-            padding: 0 25px;
+            padding: 0 10px;
             font-size: 13px;
             font-weight: 600;
             letter-spacing: .1rem;
             text-decoration: none;
             text-transform: uppercase;
-        }
-
-        .m-b-md {
-            margin-bottom: 30px;
         }
 
         /*カード*/
@@ -84,43 +50,42 @@
     </style>
 </head>
 <body>
-<div class="flex-center position-ref full-height">
 
-    @if (Route::has('login'))
-        <div class="top-center links">
-            <a class="text-dark" href="{{route('ouchi.index')}}">OuchiNot</a>
-            <a class="text-dark" href="https://calendar.google.com/calendar/u/0/r/month?tab=wc">Calendar</a>
-            @auth
-                <a class="text-dark" href="{{ url('/home') }}">Home</a>
-            @else
-                <a class="text-dark" href="{{ route('login') }}">Login</a>
+@extends('layouts.app')
 
-                @if (Route::has('register'))
-                    <a class="text-dark" href="{{ route('register') }}">Register</a>
-                @endif
-            @endauth
-        </div>
-    @endif
+@section('content')
+
+    {{--トップナビ案2--}}
+    {{--<div class="container-md">--}}
+    {{--    <div class="row justify-content-center">--}}
+    {{--    @if (Route::has('login'))--}}
+    {{--            <div class="top-center links">--}}
+    {{--            <a class="content text-dark" href="{{route('ouchi.index')}}">OuchiNot</a>--}}
+    {{--            <a class="content text-dark" href="https://calendar.google.com/calendar/u/0/r/month?tab=wc">Calendar</a>--}}
+    {{--            @auth--}}
+    {{--                <a class="content text-dark" href="{{ url('/home') }}">Home</a>--}}
+    {{--            @else--}}
+    {{--                <a class="content text-dark" href="{{ route('login') }}">Login</a>--}}
+    {{--                @if (Route::has('register'))--}}
+    {{--                    <a class="contenttext-dark" href="{{ route('register') }}">Register</a>--}}
+    {{--                @endif--}}
+    {{--            @endauth--}}
+    {{--        </div>--}}
+    {{--    @endif--}}
+    {{--    </div>--}}
+    {{--</div>--}}
+
+    {{--トップ画像--}}
     <div class="content">
-        <h2 class="content text-primary">OuchiNote</h2>
-        <img src="https://blog.autumnblue.net/wp-content/uploads/2020/12/house2.jpg" alt="Responsive image">
-
-{{--        <div class="alert alert-warning" role="alert">--}}
-{{--            <h4 class="alert-heading">さあ、家づくりをはじめよう</h4>--}}
-{{--            <p>Did you find a good housing company?　Use this service to successfully build your precious home!</p>--}}
-{{--            <hr>--}}
-{{--            <p class="mb-0">Let's start looking for a housing company.</p>--}}
-{{--        </div>--}}
-{{--        <div class="jumbotron jumbotron-fluid">--}}
-{{--            <div class="container">--}}
-{{--                <h1 class="display-4">さあ、家づくりをはじめよう</h1>--}}
-{{--                <p class="lead">Did you find a good housing company?　Use this service to successfully build your precious home!</p>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-
-        <h2 class="content text-dark my-3">さあ、家づくりをはじめよう</h2>
-        {{--        ouchinote--}}
-        <div class="card text-center">
+        <img class="container-md" src="https://blog.autumnblue.net/wp-content/uploads/2020/12/house2.jpg"
+             alt="Responsive image">
+    </div>
+    <div class="container-md">
+        <h3 class="content text-dark my-5">さあ、家づくりをはじめよう</h3>
+    </div>
+    <div class="container-md">
+        {{--ouchinote--}}
+        <div class="card text-center mb-3">
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
                     <li class="nav-item">
@@ -138,7 +103,7 @@
             </div>
         </div>
 
-        {{--        Google Calendar--}}
+        {{--Google Calendar--}}
         <div class="card text-center">
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
@@ -157,6 +122,8 @@
             </div>
         </div>
     </div>
-</div>
+
+@endsection
+
 </body>
 </html>
