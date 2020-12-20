@@ -90,10 +90,7 @@ Lack of fairness.
 --- 登録した住宅会社情報は内容変更できる  
 --- 登録した住宅会社情報は削除できる  
 --- 登録した住宅会社情報は一覧表示させる  
---- 一覧表示は資金計画額順に並べ替えることが出来る  
-- 住宅会社ログインは住宅会社任意に決めたIDとパスワードで行う  
---- ログインするには住宅会社登録が必要  
---- ログイン後はログアウトすることができる  
+--- 一覧表示は資金計画額順に並べ替えることが出来る    
 - ユーザーはログイン後理由と共に決定した住宅会社に「オススメ」をつけることができる  
 --- 「オススメ」は1アカウントにつき1つまでしか登録できない  
 --- 「オススメ」は登録後に変更することができる  
@@ -108,9 +105,6 @@ Lack of fairness.
 --- Registered housing company information can be deleted  
 --- Display a list of registered housing company information 
 --- The list display can be sorted in order of financial plan amount  
-- Login with an ID and password decided by the housing company　 
---- Housing company registration required to log in  
---- You can log out after logging in  
 - After logging in, the user can add "recommendations" to the housing company that was decided along with the reason.  
 --- Only one "Recommended" can be registered per account  
 --- "Recommended" can be changed after registration
@@ -125,17 +119,34 @@ Lack of fairness.
 - ユーザーはログイン後住宅会社を「お気に入り登録」できる  
 --- 「お気に入り登録」は一覧表示できる  
 --- 「お気に入り登録」は削除できる  
+- 住宅会社ログインは住宅会社任意に決めたIDとパスワードで行う  
+--- ログインするには住宅会社登録が必要  
+--- ログイン後はログアウトすることができる  
+- 住宅会社は受注予約状況を設定することができる  
+--- 受注予約状況は[null,受注可能,1ヶ月待ち,2ヶ月待ち,3ヶ月待ち,3ヶ月~半年待ち,半年~1年待ち,1年以上待ち]から選択する  
+- ユーザーは人気の住宅会社を閲覧できる  
+--- 人気の住宅会社は、オススメ数と受注予約状況を総合的に判断してランキング表示させる  
 
 - Users can browse recommended housing companies without logging in  
 - Users can search for words they care about without logging in  
 - Users can "favorite" housing companies after logging in  
 --- "Favorite registration" can be displayed in a list 
 --- "Favorite registration" can be deleted  
+- Login with an ID and password decided by the housing company　 
+--- Housing company registration required to log in  
+--- You can log out after logging in  
+- Housing company can set order reservation status  
+--- Select the order reservation status from [null, acceptable, 1 month wait, 2 months wait, 3 months wait, 3 months to 6 months wait, 6 months to 1 year wait, 1 year or more wait]  
+- Users can browse popular housing companies  
+--- Popular housing companies comprehensively judge the recommended number and order reservation status and display the ranking  
 
 ## Framework
 
 [Laravel](https://packagist.org/packages/laravel/framework).   
 [bootstrap](https://getbootstrap.jp/). 
+
+## Database
+[mySQL](https://www.mysql.com/jp/).
 
 ## My development environment
 
