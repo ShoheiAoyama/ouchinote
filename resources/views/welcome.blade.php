@@ -41,7 +41,7 @@
         .card-height {
             height: 500px;
         }
-
+        /*カード*/
         .card__textbox_ao > * + * {
             margin-top: 10px;
         }
