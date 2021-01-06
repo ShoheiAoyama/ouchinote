@@ -9,7 +9,7 @@
 
 ## WEBSITE url
 
-[OuchiNote](http://archi-engineer.sakura.ne.jp/)
+[OuchiNote](http://archi-engineer.sakura.ne.jp/) ←
 
 ## About OuchiNote
 
